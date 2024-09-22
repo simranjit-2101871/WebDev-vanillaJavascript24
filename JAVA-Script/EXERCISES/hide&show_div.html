@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HIDE and show the div element</title>
+
+        <style>
+            .main{
+                background-color: orange;
+                padding: 50px 10px;
+                margin:20px 0px;
+
+            }
+
+
+        </style>
+    </head>
+
+
+<body>
+    <div id="main" class="main">THIS IS MY DIV ELEMENT WHICHI WANT TO EDIT OR UPDATE</div>
+    <button onclick="hideShow()">Hide and Show Putta ji </button>
+
+
+
+    <script>
+        let div=document.getElementById('main');
+        let display=0;
+
+        function hideShow(){
+            if(display==1){
+                div.style.display='block';
+                display=0;
+            }
+            else{
+                div.style.display='none';
+                display=1;
+
+            }
+
+        }
+    </script>
+</body>
+</html>
